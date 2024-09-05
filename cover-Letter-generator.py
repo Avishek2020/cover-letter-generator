@@ -18,7 +18,7 @@ def create_pdf(name, company_name, company_address, profile, role, color="blue",
     # Add a horizontal line after the contact info
     pdf.line(10, pdf.get_y(), 200, pdf.get_y())  # Draw a horizontal line
 
-    pdf.set_font(font, '', 6)
+    pdf.set_font(font, '', 8)
     # First part: up to the email address
     pdf.cell(200, 3, "Bad-Lippspringe, Germany | +49 17685225808 | avishek2020@gmail.com", ln=True, align='C')
 
@@ -28,7 +28,7 @@ def create_pdf(name, company_name, company_address, profile, role, color="blue",
    
     # Body of the cover letter
     pdf.set_text_color(0, 0, 0)  # Black color for the text
-    pdf.set_font("Arial", '', 7)
+    pdf.set_font("Arial", '', 10)
     today_date = datetime.today().strftime('%B %d, %Y')
     
     text = (
